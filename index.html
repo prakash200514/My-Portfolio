@@ -322,15 +322,15 @@
       }
       #about .about-grid {
         display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
-        margin-top: 60px;
+        margin-top: 25px;
       }
-      .about-main { grid-column: 1 / -1; }
+      .about-main { grid-column: 1 / -1; padding: 24px !important; }
 
       .about-text { font-size: 1.05rem; color: var(--text-secondary); line-height: 1.85; }
       .about-text .highlight { color: var(--accent-cyan); font-weight: 600; }
 
       .info-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2px; margin-top: 24px; border-radius: var(--radius-md); overflow: hidden; }
-      .info-item { padding: 20px 24px; background: rgba(255,255,255,0.025); border: 1px solid var(--border); }
+      .info-item { padding: 12px 20px; background: rgba(255,255,255,0.025); border: 1px solid var(--border); }
       .info-item:first-child { border-radius: var(--radius-sm) 0 0 var(--radius-sm); }
       .info-item:last-child { border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
       .info-label { font-family: var(--font-mono); font-size: 0.68rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 6px; }
@@ -340,7 +340,7 @@
       .bento-achievements { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; grid-column: 1 / -1; }
       .achievement-card {
         background: var(--bg-card); border: 1px solid var(--border);
-        border-radius: var(--radius-md); padding: 28px 24px;
+        border-radius: var(--radius-md); padding: 16px 20px;
         position: relative; overflow: hidden; transition: var(--transition);
       }
       .achievement-card:hover { border-color: var(--border-glow); transform: translateY(-3px); }
@@ -349,9 +349,9 @@
         background: var(--grad-1); opacity: 0.6;
       }
       .achievement-num {
-        font-family: var(--font-display); font-size: 3rem; font-weight: 800;
+        font-family: var(--font-display); font-size: 2.2rem; font-weight: 800;
         background: var(--grad-1); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
-        line-height: 1; margin-bottom: 8px;
+        line-height: 1; margin-bottom: 4px;
       }
       .achievement-desc { font-size: 0.85rem; color: var(--text-secondary); font-weight: 500; }
 
@@ -1631,7 +1631,7 @@
             <p class="about-text" style="margin-top: 16px;">
               I have completed my Bachelor's degree in Computer Science and will be pursuing a Master of Computer Applications (MCA) starting in August 2026. I continue to enhance my skills through full-stack development projects, internships, and continuous learning.
             </p>
-            <div class="info-grid" style="margin-top: 28px;">
+            <div class="info-grid" style="margin-top: 15px;">
               <div class="info-item">
                 <div class="info-label">Name</div>
                 <div class="info-value">Mari Muthu Prakash M</div>
@@ -1650,19 +1650,19 @@
           <div class="bento-achievements">
             <div class="achievement-card reveal reveal-delay-1">
               <div class="achievement-num">694+</div>
-              <div class="achievement-desc">GitHub Commits</div>
+              <div class="achievement-desc">GitHub Contributions</div>
             </div>
             <div class="achievement-card reveal reveal-delay-2">
               <div class="achievement-num">15+</div>
-              <div class="achievement-desc">Projects Completed</div>
+              <div class="achievement-desc">Projects Built</div>
             </div>
             <div class="achievement-card reveal reveal-delay-3">
               <div class="achievement-num">3</div>
-              <div class="achievement-desc">Internships</div>
+              <div class="achievement-desc">Internships Completed</div>
             </div>
             <div class="achievement-card reveal reveal-delay-4">
               <div class="achievement-num">120+</div>
-              <div class="achievement-desc">Internship Hours</div>
+              <div class="achievement-desc">Training Hours</div>
             </div>
           </div>
         </div>
