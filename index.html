@@ -1443,12 +1443,7 @@
               <span>Achievements</span>
             </a>
           </li>
-          <li>
-            <a href="#blog" data-nav="blog">
-              <i data-lucide="book-open"></i>
-              <span>Blog</span>
-            </a>
-          </li>
+
           <li>
             <a href="#contact" data-nav="contact">
               <i data-lucide="mail"></i>
@@ -1914,32 +1909,6 @@
         </div>
       </section>
 
-      <!-- ── BLOG ── -->
-      <section id="blog">
-        <div class="section-eyebrow reveal">My Writeups</div>
-        <h2 class="section-title reveal">Latest Blog Articles</h2>
-        <p class="section-subtitle reveal">Sharing my thoughts, guides, and learnings on web engineering.</p>
-        
-        <div class="about-grid" style="grid-template-columns: repeat(auto-fit, minmax(285px, 1fr)); gap: 20px;">
-          <div class="glass-card reveal" style="padding: 20px; display: flex; flex-direction: column; height: 100%;">
-            <div style="color:var(--text-muted); font-size:0.75rem; margin-bottom:8px;">June 12, 2026 • 5 min read</div>
-            <h4 style="color:#fff; font-size:1.1rem; font-weight:600; margin-bottom:8px; line-height:1.4;">Why PHP is Still Relevant in 2026 for Modern Web Apps</h4>
-            <p style="color:var(--text-secondary); font-size:0.85rem; line-height:1.6; margin-bottom:16px; flex-grow: 1;">
-              An objective look at how modern PHP features like Fibers, JIT compiling, and typing systems keep it highly performant and viable.
-            </p>
-            <a href="#" style="color:var(--accent-cyan); text-decoration:none; font-size:0.85rem; font-weight:600; display:inline-flex; align-items:center; gap:6px;">Read Article <i data-lucide="arrow-right" style="width:14px; height:14px;"></i></a>
-          </div>
-          <div class="glass-card reveal reveal-delay-1" style="padding: 20px; display: flex; flex-direction: column; height: 100%;">
-            <div style="color:var(--text-muted); font-size:0.75rem; margin-bottom:8px;">May 28, 2026 • 7 min read</div>
-            <h4 style="color:#fff; font-size:1.1rem; font-weight:600; margin-bottom:8px; line-height:1.4;">Mastering React Performance Profiling &amp; Optimization</h4>
-            <p style="color:var(--text-secondary); font-size:0.85rem; line-height:1.6; margin-bottom:16px; flex-grow: 1;">
-              Step-by-step guide to tracking unnecessary renders, using useMemo/useCallback efficiently, and splitting bundles with React.lazy.
-            </p>
-            <a href="#" style="color:var(--accent-cyan); text-decoration:none; font-size:0.85rem; font-weight:600; display:inline-flex; align-items:center; gap:6px;">Read Article <i data-lucide="arrow-right" style="width:14px; height:14px;"></i></a>
-          </div>
-        </div>
-      </section>
-
       <!-- ── CONTACT ── -->
       <section id="contact">
         <div class="section-eyebrow reveal">Get In Touch</div>
@@ -2084,7 +2053,7 @@
 
       // ── Active nav ──
       function updateActiveNav() {
-        const sections = ['home', 'about', 'qualification', 'portfolio', 'case-studies', 'skills', 'certifications', 'achievements', 'blog', 'contact'];
+        const sections = ['home', 'about', 'qualification', 'portfolio', 'case-studies', 'skills', 'certifications', 'achievements', 'contact'];
         let current = 'home';
         sections.forEach(id => {
           const el = document.getElementById(id);
