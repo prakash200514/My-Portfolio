@@ -336,7 +336,7 @@
       .info-value { font-size: 0.95rem; font-weight: 600; color: var(--text-primary); }
 
       /* Achievement bento */
-      .bento-achievements { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; grid-column: 1 / -1; }
+      .bento-achievements { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; grid-column: 1 / -1; }
       .achievement-card {
         background: var(--bg-card); border: 1px solid var(--border);
         border-radius: var(--radius-md); padding: 28px 24px;
@@ -428,7 +428,7 @@
       .timeline { position: relative; }
       .timeline::before {
         content: ''; position: absolute; left: 15px; top: 24px; bottom: 0; width: 1px;
-        background: linear-gradient(to bottom, var(--accent-violet), transparent);
+        background: var(--accent-violet); opacity: 0.35;
       }
 
       .timeline-item {
@@ -577,7 +577,7 @@
         .hero-stats { justify-content: center; }
         .hero-visual { display: none; }
         #about .about-grid { grid-template-columns: 1fr; }
-        .bento-achievements { grid-template-columns: repeat(3, 1fr); }
+        .bento-achievements { grid-template-columns: repeat(2, 1fr); }
         .resume-grid { grid-template-columns: 1fr; }
         .contact-grid { grid-template-columns: 1fr; }
         .project-bento { grid-template-columns: 1fr; }
@@ -600,7 +600,7 @@
         section { padding: 70px 20px; }
         #home { padding: 80px 20px 40px; }
         footer { padding: 30px 20px; }
-        .bento-achievements { grid-template-columns: repeat(3, 1fr); }
+        .bento-achievements { grid-template-columns: repeat(2, 1fr); }
         .form-row { grid-template-columns: 1fr; }
         .skills-grid { grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); }
         .float-badge { display: none; }
@@ -1473,7 +1473,7 @@
 
     <main>
       <!-- ── HERO ── -->
-      <section id="home" style="padding: 40px 20px 10px; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; max-width: 100%;">
+      <section id="home" style="padding: 20px 20px 10px; min-height: 100vh; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; max-width: 100%;">
         <!-- Top row with Status Badge and Let's Connect -->
         <div class="top-header-row">
           <div class="opportunity-badge">Available for opportunities</div>
@@ -1648,16 +1648,20 @@
           <!-- Achievement cards -->
           <div class="bento-achievements">
             <div class="achievement-card reveal reveal-delay-1">
-              <div class="achievement-num">BSc</div>
-              <div class="achievement-desc">Computer Science Degree</div>
+              <div class="achievement-num">694+</div>
+              <div class="achievement-desc">GitHub Commits</div>
             </div>
             <div class="achievement-card reveal reveal-delay-2">
-              <div class="achievement-num">2+</div>
-              <div class="achievement-desc">Years of Learning Experience</div>
+              <div class="achievement-num">15+</div>
+              <div class="achievement-desc">Projects Completed</div>
             </div>
             <div class="achievement-card reveal reveal-delay-3">
-              <div class="achievement-num">10+</div>
-              <div class="achievement-desc">Completed Projects</div>
+              <div class="achievement-num">3</div>
+              <div class="achievement-desc">Internships</div>
+            </div>
+            <div class="achievement-card reveal reveal-delay-4">
+              <div class="achievement-num">120+</div>
+              <div class="achievement-desc">Internship Hours</div>
             </div>
           </div>
         </div>
