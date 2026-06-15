@@ -320,6 +320,8 @@
         padding-top: 20px;
         padding-bottom: 30px;
       }
+      #education { padding-top: 40px; padding-bottom: 40px; }
+      #experience { padding-top: 40px; padding-bottom: 40px; }
       #about .about-grid {
         display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
         margin-top: 25px;
@@ -1756,15 +1758,15 @@
         </div>
       </section>
 
-      <!-- ── QUALIFICATION ── -->
-      <section id="qualification">
-        <div class="section-eyebrow reveal">My Journey</div>
-        <h2 class="section-title reveal">Education &amp; Experience</h2>
-        <p class="section-subtitle reveal">The path that shaped my skills and professional growth.</p>
+      <!-- ── EDUCATION ── -->
+      <section id="education">
+        <div class="section-eyebrow reveal">My Academic Path</div>
+        <h2 class="section-title reveal">Education Details</h2>
+        <p class="section-subtitle reveal">The academic institutions and milestones that formed my foundation.</p>
 
-        <div class="resume-grid">
+        <div style="max-width: 900px; margin: 40px auto 0; width: 100%;">
           <!-- Education -->
-          <div id="education" class="glass-card reveal">
+          <div class="glass-card reveal" style="width: 100%; padding: 40px;">
             <div class="resume-column-title">Education</div>
             <div class="timeline">
               <div class="timeline-item">
@@ -1796,9 +1798,18 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
+      <!-- ── EXPERIENCE ── -->
+      <section id="experience">
+        <div class="section-eyebrow reveal">My Career Path</div>
+        <h2 class="section-title reveal">Work Experience</h2>
+        <p class="section-subtitle reveal">Professional roles, internships, and work achievements.</p>
+
+        <div style="max-width: 900px; margin: 40px auto 0; width: 100%;">
           <!-- Work Experience -->
-          <div id="experience" class="glass-card reveal reveal-delay-1">
+          <div class="glass-card reveal" style="width: 100%; padding: 40px;">
             <div class="resume-column-title">Experience</div>
             <div class="timeline">
               <div class="timeline-item">
@@ -1831,6 +1842,7 @@
             </div>
           </div>
         </div>
+      </section>
 
         <!-- Skills -->
         <div class="skills-section" id="skills">
