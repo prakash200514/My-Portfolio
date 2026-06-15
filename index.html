@@ -171,7 +171,7 @@
       }
 
       .hero-grid {
-        display: grid; grid-template-columns: 1fr 1fr; gap: 60px;
+        display: grid; grid-template-columns: 1fr 1fr; gap: 30px 60px;
         width: 100%; max-width: 1200px; margin: 0 auto;
         align-items: center;
       }
@@ -316,6 +316,9 @@
       }
 
       /* ── About Section ── */
+      #about {
+        padding-top: 40px;
+      }
       #about .about-grid {
         display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
         margin-top: 60px;
@@ -826,6 +829,9 @@
         nav#navbar {
           display: none !important;
         }
+        .hero-tech-chips {
+          flex-wrap: nowrap;
+        }
       }
       
       @media (max-width: 1023px) {
@@ -1022,23 +1028,23 @@
       .hero-tech-chips {
         display: inline-flex;
         align-items: center;
-        gap: 8px;
+        gap: 6px;
         margin-top: 35px;
         flex-wrap: wrap;
         background: rgba(255, 255, 255, 0.02);
         border: 1px solid var(--border);
         border-radius: 50px;
-        padding: 8px 16px;
+        padding: 6px 12px;
       }
       .tech-chip-small {
         display: inline-flex;
         align-items: center;
-        gap: 8px;
-        padding: 4px 12px;
+        gap: 6px;
+        padding: 4px 10px;
         background: rgba(255,255,255,0.02);
         border: 1px solid rgba(255,255,255,0.05);
         border-radius: 50px;
-        font-size: 0.75rem;
+        font-size: 0.72rem;
         font-weight: 600;
         color: var(--text-secondary);
         transition: var(--transition);
@@ -1149,28 +1155,28 @@
       }
       
       .badge-php {
-        left: -10px;
+        left: 20px;
         top: 42%;
         animation: hover-php 6s ease-in-out infinite alternate;
         border-color: rgba(124, 58, 237, 0.3);
         box-shadow: 0 4px 20px rgba(124, 58, 237, 0.15);
       }
       .badge-react {
-        right: -10px;
+        right: 20px;
         top: 15%;
         animation: hover-react 6s ease-in-out infinite alternate;
         border-color: rgba(0, 212, 255, 0.3);
         box-shadow: 0 4px 20px rgba(0, 212, 255, 0.15);
       }
       .badge-mysql {
-        right: -10px;
+        right: 20px;
         bottom: 25%;
         animation: hover-mysql 6s ease-in-out infinite alternate;
         border-color: rgba(245, 158, 11, 0.3);
         box-shadow: 0 4px 20px rgba(245, 158, 11, 0.15);
       }
       .badge-js {
-        left: 30px;
+        left: 55px;
         bottom: 12%;
         animation: hover-js 6s ease-in-out infinite alternate;
         border-color: rgba(251, 191, 36, 0.3);
@@ -1215,7 +1221,7 @@
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         gap: 16px;
-        margin-top: 60px;
+        margin-top: 20px;
         width: 100%;
         max-width: 1200px;
       }
@@ -1312,10 +1318,10 @@
           width: 320px;
           height: 320px;
         }
-        .badge-php { left: -10px; }
-        .badge-react { right: -10px; }
-        .badge-mysql { right: -10px; }
-        .badge-js { left: 10px; }
+        .badge-php { left: 20px; }
+        .badge-react { right: 20px; }
+        .badge-mysql { right: 20px; }
+        .badge-js { left: 50px; }
       }
       @media (max-width: 768px) {
         .stats-bar {
@@ -1467,7 +1473,7 @@
 
     <main>
       <!-- ── HERO ── -->
-      <section id="home" style="padding: 40px 20px 60px; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; max-width: 100%;">
+      <section id="home" style="padding: 40px 20px 20px; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; max-width: 100%;">
         <!-- Top row with Status Badge and Let's Connect -->
         <div class="top-header-row">
           <div class="opportunity-badge">Available for opportunities</div>
