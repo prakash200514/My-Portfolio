@@ -1408,7 +1408,13 @@
             </a>
           </li>
           <li>
-            <a href="#qualification" data-nav="qualification">
+            <a href="#education" data-nav="education">
+              <i data-lucide="graduation-cap"></i>
+              <span>Education</span>
+            </a>
+          </li>
+          <li>
+            <a href="#experience" data-nav="experience">
               <i data-lucide="briefcase"></i>
               <span>Experience</span>
             </a>
@@ -1758,7 +1764,7 @@
 
         <div class="resume-grid">
           <!-- Education -->
-          <div class="glass-card reveal">
+          <div id="education" class="glass-card reveal">
             <div class="resume-column-title">Education</div>
             <div class="timeline">
               <div class="timeline-item">
@@ -1792,7 +1798,7 @@
           </div>
 
           <!-- Work Experience -->
-          <div class="glass-card reveal reveal-delay-1">
+          <div id="experience" class="glass-card reveal reveal-delay-1">
             <div class="resume-column-title">Experience</div>
             <div class="timeline">
               <div class="timeline-item">
@@ -2053,7 +2059,7 @@
 
       // ── Active nav ──
       function updateActiveNav() {
-        const sections = ['home', 'about', 'qualification', 'portfolio', 'case-studies', 'skills', 'certifications', 'achievements', 'contact'];
+        const sections = ['home', 'about', 'education', 'experience', 'portfolio', 'case-studies', 'skills', 'certifications', 'achievements', 'contact'];
         let current = 'home';
         sections.forEach(id => {
           const el = document.getElementById(id);
