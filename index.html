@@ -1428,12 +1428,6 @@
             </a>
           </li>
           <li>
-            <a href="#case-studies" data-nav="case-studies">
-              <i data-lucide="file-check-2"></i>
-              <span>Case Studies</span>
-            </a>
-          </li>
-          <li>
             <a href="#skills" data-nav="skills">
               <i data-lucide="terminal"></i>
               <span>Skills</span>
@@ -1818,31 +1812,6 @@
         </div>
       </section>
 
-      <!-- ── CASE STUDIES ── -->
-      <section id="case-studies">
-        <div class="section-eyebrow reveal">Case Studies</div>
-        <h2 class="section-title reveal">Deep Dive Projects</h2>
-        <p class="section-subtitle reveal">Detailed analyses of complex problems solved and systems designed.</p>
-        
-        <div class="about-grid">
-          <div class="glass-card reveal" style="padding:30px;">
-            <span class="project-tag tag-violet" style="background:rgba(124,58,237,0.15);color:#c084fc;border:1px solid rgba(124,58,237,0.3);padding:4px 10px;border-radius:50px;font-size:0.75rem;font-weight:600;">Full Stack · AI Integration</span>
-            <h3 style="font-family:var(--font-display);font-size:1.4rem;font-weight:700;margin:15px 0 10px;color:#fff;">Smart E-Commerce Portal</h3>
-            <p style="color:var(--text-secondary);font-size:0.9rem;line-height:1.7;margin-bottom:20px;">
-              An end-to-end analysis of building a high-scale e-commerce platform with automated inventory recommendations and sub-second catalog search performance.
-            </p>
-            <a href="#" class="connect-btn" style="width:fit-content;">Read Case Study <i data-lucide="arrow-right"></i></a>
-          </div>
-          <div class="glass-card reveal reveal-delay-1" style="padding:30px;">
-            <span class="project-tag tag-cyan" style="background:rgba(0,212,255,0.15);color:var(--accent-cyan);border:1px solid rgba(0,212,255,0.3);padding:4px 10px;border-radius:50px;font-size:0.75rem;font-weight:600;">Database · Optimization</span>
-            <h3 style="font-family:var(--font-display);font-size:1.4rem;font-weight:700;margin:15px 0 10px;color:#fff;">High-Throughput Analytics Engine</h3>
-            <p style="color:var(--text-secondary);font-size:0.9rem;line-height:1.7;margin-bottom:20px;">
-              How we optimized a relational database structure to handle millions of metrics events daily, reducing dashboard loading latency by over 80%.
-            </p>
-            <a href="#" class="connect-btn" style="width:fit-content;">Read Case Study <i data-lucide="arrow-right"></i></a>
-          </div>
-        </div>
-      </section>
 
         <!-- Skills -->
         <div class="skills-section" id="skills">
@@ -2071,7 +2040,7 @@
 
       // ── Active nav ──
       function updateActiveNav() {
-        const sections = ['home', 'about', 'education', 'experience', 'portfolio', 'case-studies', 'skills', 'certifications', 'achievements', 'contact'];
+        const sections = ['home', 'about', 'education', 'experience', 'portfolio', 'skills', 'certifications', 'achievements', 'contact'];
         let current = 'home';
         sections.forEach(id => {
           const el = document.getElementById(id);
