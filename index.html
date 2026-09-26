@@ -448,7 +448,7 @@
       .about-text { font-size: 1.05rem; color: var(--text-secondary); line-height: 1.85; }
       .about-text .highlight { color: var(--accent-cyan); font-weight: 600; }
 
-      .info-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2px; margin-top: 24px; border-radius: var(--radius-md); overflow: hidden; }
+      .info-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; margin-top: 24px; border-radius: var(--radius-md); overflow: hidden; }
       .info-item { padding: 12px 20px; background: rgba(255,255,255,0.025); border: 1px solid var(--border); }
       .info-item:first-child { border-radius: var(--radius-sm) 0 0 var(--radius-sm); }
       .info-item:last-child { border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
@@ -795,10 +795,8 @@
         .resume-grid { grid-template-columns: 1fr; }
         .contact-grid { grid-template-columns: 1fr; }
         .project-bento { grid-template-columns: 1fr; }
-        .info-grid { grid-template-columns: 1fr; border-radius: var(--radius-sm); }
+        .info-grid { grid-template-columns: repeat(2, 1fr); border-radius: var(--radius-sm); }
         .info-item { border-radius: 0; }
-        .info-item:first-child { border-radius: var(--radius-sm) var(--radius-sm) 0 0; }
-        .info-item:last-child { border-radius: 0 0 var(--radius-sm) var(--radius-sm); }
       }
       @media (max-width: 768px) {
         nav#navbar { padding: 0 20px; }
@@ -818,6 +816,9 @@
         .form-row { grid-template-columns: 1fr; }
         .skills-grid { grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); }
         .float-badge { display: none; }
+      }
+      @media (max-width: 640px) {
+        .info-grid { grid-template-columns: 1fr; }
       }
       @media (max-width: 480px) {
         .bento-achievements { grid-template-columns: 1fr; }
@@ -2377,7 +2378,10 @@
               Hi! My name is <span class="highlight">Mari Muthu Prakash M</span>, a Computer Science graduate passionate about web development and software engineering. I enjoy designing <span class="highlight">clean web applications</span> with intuitive features and transforming ideas into real-world solutions.
             </p>
             <p class="about-text" style="margin-top: 16px;">
-              I have completed my Bachelor's degree in Computer Science and will be pursuing a Master of Computer Applications (MCA) starting in August 2026. I continue to enhance my skills through full-stack development projects, internships, and continuous learning.
+              I have completed my Bachelor's degree in Computer Science and am currently pursuing a <span class="highlight">Master of Computer Applications (MCA)</span> at Francis Xavier Engineering College, Tirunelveli. Along with my studies, I serve as a <span class="highlight">Class Representative (CR)</span>, helping coordinate communication between students and faculty members.
+            </p>
+            <p class="about-text" style="margin-top: 16px;">
+              I continue to enhance my skills through full-stack development projects, internships, and continuous learning, while exploring modern technologies and building practical solutions.
             </p>
             <div class="info-grid" style="margin-top: 15px;">
               <div class="info-item">
@@ -2390,7 +2394,11 @@
               </div>
               <div class="info-item">
                 <div class="info-label">Email</div>
-                <div class="info-value" style="font-size:0.82rem;"><a href="mailto:marimuthuprakash2005@gmail.com" style="color:var(--accent-cyan);text-decoration:none;">marimuthuprakash2005@gmail.com</a></div>
+                <div class="info-value" style="font-size:0.82rem; word-break: break-word;"><a href="mailto:marimuthuprakash2005@gmail.com" style="color:var(--accent-cyan);text-decoration:none;">marimuthuprakash2005@gmail.com</a></div>
+              </div>
+              <div class="info-item">
+                <div class="info-label">Current Role</div>
+                <div class="info-value" style="font-size:0.88rem; line-height: 1.35;">MCA Student &amp; Class Representative</div>
               </div>
             </div>
           </div>
