@@ -513,18 +513,38 @@
         --modal-action-bar-bg: #f1f5f9;
       }
 
-      #portfolio { background: none; }
+      #portfolio {
+        background: none;
+        padding-top: 8px !important;
+        padding-bottom: 25px !important;
+        scroll-margin-top: 0px !important;
+      }
 
-      .projects-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 48px; flex-wrap: wrap; gap: 20px; }
+      .projects-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 16px;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      #portfolio .section-eyebrow {
+        margin-bottom: 4px;
+      }
+      #portfolio .section-title {
+        margin-bottom: 0;
+        font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+        line-height: 1.2;
+      }
 
       .project-bento {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
+        gap: 16px;
       }
 
       .project-card {
-        border-radius: var(--radius-lg);
+        border-radius: 16px;
         overflow: hidden;
         background: var(--p-card-bg);
         border: 1px solid var(--p-card-border);
@@ -532,11 +552,10 @@
         transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
         display: flex;
         flex-direction: column;
-        height: 100%;
         position: relative;
       }
       .project-card:hover {
-        transform: translateY(-5px);
+        transform: translateY(-4px);
         border-color: var(--p-card-hover-border);
         box-shadow: var(--p-card-hover-shadow);
       }
@@ -544,7 +563,7 @@
       .project-img-wrapper {
         position: relative;
         width: 100%;
-        height: 240px;
+        height: 180px;
         overflow: hidden;
         background: #050811;
         cursor: pointer;
@@ -563,8 +582,8 @@
 
       .project-caption {
         position: absolute;
-        top: 14px;
-        left: 14px;
+        top: 10px;
+        left: 10px;
         z-index: 2;
         pointer-events: none;
       }
@@ -574,9 +593,9 @@
         -webkit-backdrop-filter: blur(10px);
         border: 1px solid rgba(255,255,255,0.18);
         border-radius: 50px;
-        padding: 4px 12px;
+        padding: 3px 10px;
         font-family: var(--font-mono);
-        font-size: 0.72rem;
+        font-size: 0.7rem;
         color: #ffffff;
         font-weight: 700;
         box-shadow: 0 4px 12px rgba(0,0,0,0.3);
@@ -584,8 +603,8 @@
 
       .project-cat-tag {
         position: absolute;
-        top: 14px;
-        right: 14px;
+        top: 10px;
+        right: 10px;
         z-index: 2;
         pointer-events: none;
         background: rgba(15, 23, 42, 0.82);
@@ -593,9 +612,9 @@
         -webkit-backdrop-filter: blur(10px);
         border: 1px solid rgba(255,255,255,0.15);
         border-radius: 50px;
-        padding: 4px 12px;
+        padding: 3px 10px;
         font-family: var(--font-mono);
-        font-size: 0.65rem;
+        font-size: 0.62rem;
         color: #38bdf8;
         font-weight: 700;
         text-transform: uppercase;
@@ -619,45 +638,45 @@
       .project-view-pill {
         background: var(--royal-blue);
         color: #ffffff;
-        font-size: 0.82rem;
+        font-size: 0.78rem;
         font-weight: 600;
-        padding: 9px 20px;
+        padding: 7px 16px;
         border-radius: 50px;
         display: inline-flex;
         align-items: center;
-        gap: 8px;
+        gap: 6px;
         box-shadow: 0 4px 20px rgba(0,0,0,0.4);
         transform: translateY(6px);
         transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
       }
       .project-view-pill svg {
-        width: 16px;
-        height: 16px;
+        width: 14px;
+        height: 14px;
       }
       .project-card:hover .project-view-pill {
         transform: translateY(0);
       }
 
       .project-card-content {
-        padding: 22px 24px 24px;
+        padding: 14px 18px 16px;
         display: flex;
         flex-direction: column;
-        gap: 14px;
+        gap: 10px;
         flex-grow: 1;
         justify-content: space-between;
       }
       .project-card-info {
         display: flex;
         flex-direction: column;
-        gap: 6px;
+        gap: 4px;
       }
       .project-card-info .project-name {
         font-family: var(--font-display);
-        font-size: 1.25rem;
+        font-size: 1.15rem;
         font-weight: 700;
         color: var(--text-primary);
         margin: 0;
-        line-height: 1.35;
+        line-height: 1.3;
         cursor: pointer;
         transition: color 0.2s ease;
       }
@@ -665,23 +684,27 @@
         color: var(--royal-blue);
       }
       .project-card-info .project-desc {
-        font-size: 0.86rem;
+        font-size: 0.8rem;
         color: var(--text-secondary);
-        line-height: 1.55;
+        line-height: 1.45;
         margin: 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
       }
 
       .project-tech-pills {
         display: flex;
         flex-wrap: wrap;
-        gap: 6px;
-        margin: 2px 0;
+        gap: 5px;
+        margin: 0;
       }
       .tech-pill {
         font-family: var(--font-mono);
-        font-size: 0.72rem;
+        font-size: 0.68rem;
         font-weight: 600;
-        padding: 4px 10px;
+        padding: 3px 8px;
         border-radius: 6px;
         background: var(--p-pill-bg);
         color: var(--p-pill-text);
@@ -693,8 +716,8 @@
       .project-card-actions {
         display: flex;
         align-items: center;
-        gap: 10px;
-        padding-top: 14px;
+        gap: 8px;
+        padding-top: 10px;
         border-top: 1px solid var(--border);
         margin-top: auto;
       }
@@ -703,10 +726,10 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        gap: 7px;
-        padding: 10px 14px;
-        border-radius: 10px;
-        font-size: 0.84rem;
+        gap: 6px;
+        padding: 8px 12px;
+        border-radius: 8px;
+        font-size: 0.8rem;
         font-weight: 600;
         font-family: var(--font-main);
         cursor: pointer;
@@ -723,8 +746,8 @@
         transform: translateY(-1px);
       }
       .btn-project-details svg {
-        width: 15px;
-        height: 15px;
+        width: 14px;
+        height: 14px;
       }
 
       .btn-project-live {
@@ -732,10 +755,10 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        gap: 7px;
-        padding: 10px 14px;
-        border-radius: 10px;
-        font-size: 0.84rem;
+        gap: 6px;
+        padding: 8px 12px;
+        border-radius: 8px;
+        font-size: 0.8rem;
         font-weight: 600;
         font-family: var(--font-main);
         cursor: pointer;
@@ -743,7 +766,7 @@
         background: var(--royal-blue);
         color: #ffffff !important;
         text-decoration: none;
-        box-shadow: 0 4px 14px rgba(29, 99, 237, 0.25);
+        box-shadow: 0 3px 12px rgba(29, 99, 237, 0.25);
         transition: all 0.25s ease;
       }
       .btn-project-live:hover {
@@ -751,11 +774,11 @@
         border-color: var(--royal-blue-hover);
         color: #ffffff !important;
         transform: translateY(-1px);
-        box-shadow: 0 6px 20px rgba(29, 99, 237, 0.4);
+        box-shadow: 0 5px 18px rgba(29, 99, 237, 0.38);
       }
       .btn-project-live svg {
-        width: 15px;
-        height: 15px;
+        width: 14px;
+        height: 14px;
       }
 
       /* Color variants for other badges (certificates etc) */
@@ -3998,7 +4021,8 @@
 
           if (target) {
             e.preventDefault();
-            const offset = window.innerWidth < 1024 ? -75 : -20;
+            const isPortfolio = targetId === '#portfolio';
+            const offset = window.innerWidth < 1024 ? (isPortfolio ? -60 : -75) : (isPortfolio ? 0 : -20);
             
             if (lenis) {
               lenis.start();
