@@ -3443,53 +3443,158 @@
           </div>
           <a href="#contact" class="btn-outline reveal" style="white-space:nowrap;">Let's Collaborate →</a>
         </div>
-        <div class="project-bento">
+        <div class="project-bento" id="projectsContainer">
           <!-- Project 1 -->
-          <div class="project-card reveal reveal-delay-1">
-            <img src="./assets/images/proimg/disease-prediction.png" alt="Disease Prediction System" class="project-img" />
-            <div class="project-caption">
-              <span class="project-label">01</span>
+          <div class="project-card reveal reveal-delay-1" data-project-id="01">
+            <div class="project-img-wrapper" onclick="openProjectModal('01')" role="button" tabindex="0" aria-label="View Disease Prediction System case study" onkeydown="if(event.key==='Enter'||event.key===' ')openProjectModal('01')">
+              <img src="./assets/images/proimg/disease-prediction.png" alt="Disease Prediction System Preview" class="project-img" loading="lazy" />
+              <div class="project-caption">
+                <span class="project-label">01</span>
+              </div>
+              <div class="project-cat-tag">Healthcare &amp; Diagnostics</div>
+              <div class="project-img-overlay">
+                <span class="project-view-pill">
+                  <i data-lucide="eye"></i> View Case Study
+                </span>
+              </div>
             </div>
-            <div class="project-overlay">
-              <span class="project-tag tag-cyan">Healthcare · ML</span>
-              <div class="project-name">Disease Prediction System</div>
-              <div class="project-desc">An innovative system analyzing body regions and symptoms with an interactive 3D body map and a secure patient dashboard.</div>
+            <div class="project-card-content">
+              <div class="project-card-info">
+                <h3 class="project-name" onclick="openProjectModal('01')">Disease Prediction System</h3>
+                <p class="project-desc">Interactive symptom-based healthcare diagnostic web app featuring an anatomical body region selector and clinical risk analysis.</p>
+              </div>
+              <div class="project-tech-pills">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">jQuery</span>
+                <span class="tech-pill">PHP</span>
+                <span class="tech-pill">MySQL</span>
+              </div>
+              <div class="project-card-actions">
+                <button type="button" class="btn-project-details" onclick="openProjectModal('01')" aria-label="View details for Disease Prediction System">
+                  <i data-lucide="info"></i>
+                  <span>View Details</span>
+                </button>
+                <a href="https://prakash200514.github.io/My-Portfolio/" target="_blank" rel="noopener noreferrer" class="btn-project-live" aria-label="Open live project for Disease Prediction System">
+                  <span>Live Project</span>
+                  <i data-lucide="external-link"></i>
+                </a>
+              </div>
             </div>
           </div>
           <!-- Project 2 -->
-          <div class="project-card reveal reveal-delay-2">
-            <img src="./assets/images/proimg/smart-city.png" alt="Smart City Ops" class="project-img" />
-            <div class="project-caption">
-              <span class="project-label">02</span>
+          <div class="project-card reveal reveal-delay-2" data-project-id="02">
+            <div class="project-img-wrapper" onclick="openProjectModal('02')" role="button" tabindex="0" aria-label="View Smart City Ops case study" onkeydown="if(event.key==='Enter'||event.key===' ')openProjectModal('02')">
+              <img src="./assets/images/proimg/smart-city.png" alt="Smart City Ops Preview" class="project-img" loading="lazy" />
+              <div class="project-caption">
+                <span class="project-label">02</span>
+              </div>
+              <div class="project-cat-tag">Civic Tech &amp; Platform</div>
+              <div class="project-img-overlay">
+                <span class="project-view-pill">
+                  <i data-lucide="eye"></i> View Case Study
+                </span>
+              </div>
             </div>
-            <div class="project-overlay">
-              <span class="project-tag tag-violet">Civic Tech · Platform</span>
-              <div class="project-name">Smart City Ops</div>
-              <div class="project-desc">Comprehensive platform for managing city resources, public grievances, and real-time tracking efficiently.</div>
+            <div class="project-card-content">
+              <div class="project-card-info">
+                <h3 class="project-name" onclick="openProjectModal('02')">Smart City Ops</h3>
+                <p class="project-desc">Centralized civic grievance and municipal resource tracking system connecting citizens with city departments for faster issue resolution.</p>
+              </div>
+              <div class="project-tech-pills">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3</span>
+                <span class="tech-pill">Bootstrap 5</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">PHP</span>
+                <span class="tech-pill">MySQL</span>
+              </div>
+              <div class="project-card-actions">
+                <button type="button" class="btn-project-details" onclick="openProjectModal('02')" aria-label="View details for Smart City Ops">
+                  <i data-lucide="info"></i>
+                  <span>View Details</span>
+                </button>
+                <a href="https://prakash200514.github.io/My-Portfolio/" target="_blank" rel="noopener noreferrer" class="btn-project-live" aria-label="Open live project for Smart City Ops">
+                  <span>Live Project</span>
+                  <i data-lucide="external-link"></i>
+                </a>
+              </div>
             </div>
           </div>
           <!-- Project 3 -->
-          <div class="project-card reveal reveal-delay-3">
-            <img src="./assets/images/proimg/bmw-showroom.png" alt="BMW Showroom" class="project-img" />
-            <div class="project-caption">
-              <span class="project-label">03</span>
+          <div class="project-card reveal reveal-delay-3" data-project-id="03">
+            <div class="project-img-wrapper" onclick="openProjectModal('03')" role="button" tabindex="0" aria-label="View BMW Automotive Showcase case study" onkeydown="if(event.key==='Enter'||event.key===' ')openProjectModal('03')">
+              <img src="./assets/images/proimg/bmw-showroom.png" alt="BMW Automotive Showcase Preview" class="project-img" loading="lazy" />
+              <div class="project-caption">
+                <span class="project-label">03</span>
+              </div>
+              <div class="project-cat-tag">UI/UX &amp; Automotive</div>
+              <div class="project-img-overlay">
+                <span class="project-view-pill">
+                  <i data-lucide="eye"></i> View Case Study
+                </span>
+              </div>
             </div>
-            <div class="project-overlay">
-              <span class="project-tag tag-orange" style="background:rgba(245,158,11,0.15);color:var(--accent-orange);border:1px solid rgba(245,158,11,0.3);">Automotive · E-Commerce</span>
-              <div class="project-name">BMW Showroom</div>
-              <div class="project-desc">Luxury premium BMW showroom with interactive models, high-end browsing experience, and sleek UI design.</div>
+            <div class="project-card-content">
+              <div class="project-card-info">
+                <h3 class="project-name" onclick="openProjectModal('03')">BMW Automotive Showcase</h3>
+                <p class="project-desc">High-contrast dark-themed showcase highlighting BMW M-Series performance engineering, model specifications, and dealership locator integration.</p>
+              </div>
+              <div class="project-tech-pills">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">Modern CSS3</span>
+                <span class="tech-pill">JavaScript (ES6+)</span>
+                <span class="tech-pill">Responsive Grid</span>
+              </div>
+              <div class="project-card-actions">
+                <button type="button" class="btn-project-details" onclick="openProjectModal('03')" aria-label="View details for BMW Automotive Showcase">
+                  <i data-lucide="info"></i>
+                  <span>View Details</span>
+                </button>
+                <a href="https://prakash200514.github.io/My-Portfolio/" target="_blank" rel="noopener noreferrer" class="btn-project-live" aria-label="Open live project for BMW Automotive Showcase">
+                  <span>Live Project</span>
+                  <i data-lucide="external-link"></i>
+                </a>
+              </div>
             </div>
           </div>
           <!-- Project 4 -->
-          <div class="project-card reveal reveal-delay-4">
-            <img src="./assets/images/proimg/medico.png" alt="Medico" class="project-img" />
-            <div class="project-caption">
-              <span class="project-label">04</span>
+          <div class="project-card reveal reveal-delay-4" data-project-id="04">
+            <div class="project-img-wrapper" onclick="openProjectModal('04')" role="button" tabindex="0" aria-label="View Medico Pharmacy case study" onkeydown="if(event.key==='Enter'||event.key===' ')openProjectModal('04')">
+              <img src="./assets/images/proimg/medico.png" alt="Medico Pharmacy Preview" class="project-img" loading="lazy" />
+              <div class="project-caption">
+                <span class="project-label">04</span>
+              </div>
+              <div class="project-cat-tag">Healthcare &amp; E-Commerce</div>
+              <div class="project-img-overlay">
+                <span class="project-view-pill">
+                  <i data-lucide="eye"></i> View Case Study
+                </span>
+              </div>
             </div>
-            <div class="project-overlay">
-              <span class="project-tag tag-green">Healthcare · E-Commerce</span>
-              <div class="project-name">Medico Pharmacy</div>
-              <div class="project-desc">Trusted online pharmacy featuring secure checkout, fast delivery, prescription uploads, and intuitive UX.</div>
+            <div class="project-card-content">
+              <div class="project-card-info">
+                <h3 class="project-name" onclick="openProjectModal('04')">Medico Pharmacy</h3>
+                <p class="project-desc">Full-featured online pharmacy web application allowing customers to browse medicines, baby care, and healthcare products with seamless checkout.</p>
+              </div>
+              <div class="project-tech-pills">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">PHP</span>
+                <span class="tech-pill">MySQL</span>
+              </div>
+              <div class="project-card-actions">
+                <button type="button" class="btn-project-details" onclick="openProjectModal('04')" aria-label="View details for Medico Pharmacy">
+                  <i data-lucide="info"></i>
+                  <span>View Details</span>
+                </button>
+                <a href="https://prakash200514.github.io/My-Portfolio/" target="_blank" rel="noopener noreferrer" class="btn-project-live" aria-label="Open live project for Medico Pharmacy">
+                  <span>Live Project</span>
+                  <i data-lucide="external-link"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -3918,6 +4023,435 @@
         });
       });
 
+      // ── Modular Data-Driven Project Architecture ──
+      const projectsData = [
+        {
+          id: "01",
+          title: "Disease Prediction System",
+          tagline: "Interactive symptom-based healthcare diagnostic web app featuring an anatomical body region selector and clinical risk analysis.",
+          category: "Healthcare & Diagnostic Web App",
+          role: "Full Stack Developer & UI Designer",
+          status: "Verified Clinical Prototype",
+          image: "./assets/images/proimg/disease-prediction.png",
+          gallery: [
+            { title: "Diagnostic Overview", src: "./assets/images/proimg/disease-prediction.png" }
+          ],
+          techStackPills: ["HTML5", "CSS3", "JavaScript", "jQuery", "PHP", "MySQL"],
+          categorizedTech: {
+            frontend: ["HTML5", "CSS3", "JavaScript (ES6)", "jQuery", "SVG Body Map"],
+            backend: ["PHP (OOP Architecture)", "RESTful JSON Controller"],
+            database: ["MySQL (Relational Schema)", "Indexed Symptom Matrix"],
+            tools: ["Git & GitHub", "Apache / XAMPP", "VS Code", "Postman"]
+          },
+          overview: "An interactive symptom-based disease prediction web application created to assist users in early healthcare risk identification. Utilizing an interactive human body-area selector, patients can click specific anatomical regions to visually narrow down symptoms, which are then analyzed against clinical correlation matrices to predict potential medical conditions and recommended precautions.",
+          problemStatement: "Patients experiencing non-emergency discomfort often struggle to pinpoint or describe localized symptoms using generic text search boxes, leading to misinterpretation, ungrounded anxiety, and delayed consultations.",
+          keyFeatures: [
+            "Interactive anatomical human body region selector for visual symptom localization",
+            "Dynamic multi-symptom evaluation engine calculating conditional disease probabilities",
+            "Secure patient authentication portal with historical diagnosis tracking and exportable records",
+            "Actionable medical recommendations dashboard highlighting precautionary steps and specialist referrals",
+            "Mobile-responsive diagnostic workflow optimized for smartphones, tablets, and desktop browsers"
+          ],
+          workflow: [
+            { step: "1. Region Selection", desc: "User clicks anatomical body zone (Head, Chest, Abdomen, Limbs) on visual model" },
+            { step: "2. Symptom Query", desc: "System dynamically fetches associated clinical symptoms and severity modifiers" },
+            { step: "3. Diagnostic Scoring", desc: "Rule-based inference engine evaluates symptom co-occurrence probabilities" },
+            { step: "4. Health Insights", desc: "Outputs diagnostic risk summary, specialist suggestions, and logs to patient history" }
+          ],
+          challenges: [
+            {
+              challenge: "Mapping complex medical taxonomy into an intuitive, non-threatening UI for non-clinical users.",
+              solution: "Engineered an interactive human body vector map with active hover states and cascading dropdowns that intelligently filter symptoms based on the selected anatomical zone."
+            },
+            {
+              challenge: "Calculating multi-symptom correlation matches with negligible query latency.",
+              solution: "Designed a normalized MySQL relational schema with composite indexes and asynchronous jQuery AJAX pipelines to evaluate probability matrices in sub-80ms."
+            }
+          ],
+          liveUrl: "https://prakash200514.github.io/My-Portfolio/",
+          githubUrl: "https://github.com/prakash200514/"
+        },
+        {
+          id: "02",
+          title: "Smart City Ops",
+          tagline: "Centralized civic grievance and municipal resource tracking system connecting citizens with city departments for faster resolution.",
+          category: "Civic Tech & Governance Platform",
+          role: "Lead Full Stack Developer",
+          status: "Municipal Production Ready",
+          image: "./assets/images/proimg/smart-city.png",
+          gallery: [
+            { title: "Operations Console", src: "./assets/images/proimg/smart-city.png" }
+          ],
+          techStackPills: ["HTML5", "CSS3", "Bootstrap 5", "JavaScript", "PHP", "MySQL"],
+          categorizedTech: {
+            frontend: ["HTML5", "CSS3", "Bootstrap 5", "Vanilla JavaScript"],
+            backend: ["PHP (Modular MVC)", "Session & CSRF Security Guards"],
+            database: ["MySQL (Relational Schema)", "Incident & Resource Tables"],
+            tools: ["Git & GitHub", "VS Code", "phpMyAdmin", "Chrome DevTools"]
+          },
+          overview: "Smart City Ops is a comprehensive civic management and resource allocation platform connecting city residents directly with municipal departments. It centralizes complaint filing, real-time ticket escalation, departmental task assignments, and civic resource tracking across water supply, power grid, roads, and waste sanitation.",
+          problemStatement: "Traditional municipal grievance redressal relied on fragmented physical queues and disconnected department phone lines, resulting in severe ticket backlogs, lost complaints, and zero resolution visibility for tax-paying citizens.",
+          keyFeatures: [
+            "Citizen grievance registration across civic sectors (water, electricity, roads, sanitation)",
+            "Real-time ticket tracking with automated status checkpoints (Submitted, Assigned, In-Progress, Resolved)",
+            "Departmental administration dashboard for assigning field crews and tracking resolution SLAs",
+            "Role-based authentication portals separating citizens, department heads, and field supervisors",
+            "Resolution efficiency analytics tracking average response times and geographic grievance hotspots"
+          ],
+          workflow: [
+            { step: "1. Incident Logging", desc: "Citizen submits grievance with category, description, location details, and optional photo attachment" },
+            { step: "2. Automated Dispatch", desc: "Routing logic classifies and forwards ticket directly to designated municipal division queue" },
+            { step: "3. Field Execution", desc: "Field supervisors update resolution checkpoints, dispatch logs, and completion timestamps" },
+            { step: "4. Citizen Audit", desc: "Citizen receives real-time tracking updates and verifies satisfactory completion" }
+          ],
+          challenges: [
+            {
+              challenge: "Eliminating ticket routing bottlenecks and ensuring complaints are automatically dispatched to the right department.",
+              solution: "Implemented categorical classification and automated status pipelines in PHP with departmental escalation SLAs."
+            },
+            {
+              challenge: "Ensuring field municipal crews on diverse, low-bandwidth devices can access and update tickets without friction.",
+              solution: "Utilized Bootstrap 5 utility classes and lightweight modular CSS to create an accessible, high-contrast UI optimized for both desktops and rugged tablets."
+            }
+          ],
+          liveUrl: "https://prakash200514.github.io/My-Portfolio/",
+          githubUrl: "https://github.com/prakash200514/"
+        },
+        {
+          id: "03",
+          title: "BMW Automotive Showcase",
+          tagline: "High-contrast dark-themed showcase highlighting BMW M-Series performance engineering, specifications, and dealer locator.",
+          category: "UI/UX & Interactive Frontend Showcase",
+          role: "Frontend Architect & Motion UI Developer",
+          status: "Live Frontend Showcase",
+          image: "./assets/images/proimg/bmw-showroom.png",
+          gallery: [
+            { title: "BMW M-Series Showcase", src: "./assets/images/proimg/bmw-showroom.png" }
+          ],
+          techStackPills: ["HTML5", "Modern CSS3", "JavaScript (ES6+)", "Responsive Grid"],
+          categorizedTech: {
+            frontend: ["HTML5 Semantic Elements", "Modern CSS3", "JavaScript (ES6+)"],
+            styling: ["Custom Design System", "CSS Flexbox & Grid", "Glassmorphism & Gradients"],
+            tools: ["Git & GitHub", "Figma", "Chrome DevTools", "Performance Profiler"]
+          },
+          overview: "A high-octane automotive landing page celebrating the engineering precision of the BMW M-Series lineup. Built with a high-contrast dark-mode aesthetic, this showcase features cinematic typography, responsive vehicle comparison grids, dynamic technical specification toggles, and integrated dealership locator maps.",
+          problemStatement: "Automotive digital showcases frequently feel static and slow, burdened by heavy unoptimized asset bundles that compromise user engagement and high-refresh-rate display fluidity.",
+          keyFeatures: [
+            "Cinematic dark-mode aesthetic with ambient lighting accents and micro-interactions",
+            "Interactive vehicle specifications matrix (horsepower, 0-100 km/h acceleration, engine torque)",
+            "Model lineup gallery featuring M3, M4, M5, and M8 Competition variants with dynamic filtering",
+            "Integrated dealership location finder with interactive map view and consultation booking",
+            "Smooth hardware-accelerated scroll animations with zero third-party framework overhead"
+          ],
+          workflow: [
+            { step: "1. Cinematic Intro", desc: "High-impact visual hero banner introducing BMW M-Series heritage and flagship model" },
+            { step: "2. Specification Matrix", desc: "Interactive toggle allows visitors to inspect engine performance, top speed, and aerodynamics" },
+            { step: "3. Model Comparison", desc: "Side-by-side spec filters highlight differentiators between track and road trims" },
+            { step: "4. Dealer Connect", desc: "Location selector provides direct links to schedule a showroom test drive" }
+          ],
+          challenges: [
+            {
+              challenge: "Maintaining consistent 60fps animations and rapid paint times while loading high-resolution vehicle assets.",
+              solution: "Employed CSS hardware-accelerated transforms, responsive viewport units, and lazy-loading techniques to eliminate layout thrashing."
+            },
+            {
+              challenge: "Creating an immersive luxury atmosphere while maintaining strict contrast accessibility ratios.",
+              solution: "Engineered a custom dark slate color system with luminescent cyan and royal blue lighting accents compliant with WCAG AA contrast standards."
+            }
+          ],
+          liveUrl: "https://prakash200514.github.io/My-Portfolio/",
+          githubUrl: "https://github.com/prakash200514/"
+        },
+        {
+          id: "04",
+          title: "Medico Pharmacy",
+          tagline: "Full-featured online pharmacy web application allowing customers to browse medicines, baby care, and healthcare products with seamless checkout.",
+          category: "Healthcare E-Commerce Platform",
+          role: "Full Stack Developer",
+          status: "Production E-Commerce Ready",
+          image: "./assets/images/proimg/medico.png",
+          gallery: [
+            { title: "Storefront & Catalog", src: "./assets/images/proimg/medico.png" }
+          ],
+          techStackPills: ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL"],
+          categorizedTech: {
+            frontend: ["HTML5", "CSS3", "JavaScript (Vanilla)", "Asynchronous Fetch"],
+            backend: ["PHP (Modular Service Layer)", "Session & Cart Controller"],
+            database: ["MySQL (Relational Product Catalog, Orders & Inventory)"],
+            tools: ["Git & GitHub", "Apache / XAMPP", "VS Code", "Postman"]
+          },
+          overview: "A comprehensive digital pharmacy and healthcare storefront enabling customers to browse, search, and order verified pharmaceuticals, pediatric care supplies, veterinary medicines, and medical equipment. Features a seamless cart-to-checkout pipeline, prescription record attachments, and order tracking.",
+          problemStatement: "Online medicine ordering often confuses non-technical users due to complex medical categorizations, missing dosage guidance, and clumsy multi-step checkout processes.",
+          keyFeatures: [
+            "Category-based product catalog (Baby, Veterinary, Injections, General Medicines)",
+            "Interactive shopping cart and checkout pipeline with real-time price tallying",
+            "Customer login/signup authentication with secure profile and past orders",
+            "Digital prescription attachment upload and order summary management",
+            "Responsive layout ensuring frictionless ordering on mobile and desktop devices"
+          ],
+          workflow: [
+            { step: "1. Product Search", desc: "Customer browses categorized health departments or searches by generic medicine name" },
+            { step: "2. Cart & Prescription", desc: "Adds items to cart and attaches medical prescription if required for regulated items" },
+            { step: "3. Secure Checkout", desc: "Enters delivery address, chooses payment method, and reviews order breakdown" },
+            { step: "4. Fulfillment & Tracking", desc: "Order is registered in MySQL database; user receives instant order confirmation" }
+          ],
+          challenges: [
+            {
+              challenge: "Managing real-time cart state, stock validation, and varied medicine packaging without page refreshes.",
+              solution: "Built an asynchronous cart state controller that synchronizes local storage with backend stock validation before order finalization."
+            },
+            {
+              challenge: "Handling diverse product attributes (tablets, syrups, injections, pet care) within a unified schema.",
+              solution: "Architected a flexible MySQL catalog schema with category attributes and stock tracking for distinct product types."
+            }
+          ],
+          liveUrl: "https://prakash200514.github.io/My-Portfolio/",
+          githubUrl: "https://github.com/prakash200514/"
+        }
+      ];
+
+      let currentModalProjectId = '01';
+
+      function openProjectModal(projectId) {
+        const project = projectsData.find(p => p.id === projectId) || projectsData[0];
+        currentModalProjectId = project.id;
+
+        // Modal Header
+        const numBadge = document.getElementById('modalProjectNum');
+        if (numBadge) numBadge.textContent = project.id;
+        
+        const titleEl = document.getElementById('modalProjectTitle');
+        if (titleEl) titleEl.textContent = project.title;
+        
+        const roleEl = document.getElementById('modalProjectRole');
+        if (roleEl) roleEl.textContent = project.role;
+        
+        const catEl = document.getElementById('modalProjectCategory');
+        if (catEl) catEl.textContent = project.category;
+
+        // Hero Preview & Tags
+        const heroImg = document.getElementById('modalHeroImg');
+        if (heroImg) {
+          heroImg.src = project.image;
+          heroImg.alt = project.title + ' Preview Screenshot';
+        }
+        
+        const heroTag = document.getElementById('modalHeroTag');
+        if (heroTag) heroTag.textContent = project.category;
+
+        // Gallery Thumbnails
+        const galleryRow = document.getElementById('modalGalleryRow');
+        if (galleryRow) {
+          galleryRow.innerHTML = '';
+          if (project.gallery && project.gallery.length > 0) {
+            project.gallery.forEach((g, idx) => {
+              const btn = document.createElement('button');
+              btn.type = 'button';
+              btn.className = 'gallery-thumb-btn' + (idx === 0 ? ' active' : '');
+              btn.innerHTML = `<img src="${g.src}" alt="${g.title}" /><span>${g.title}</span>`;
+              btn.onclick = () => {
+                if (heroImg) {
+                  heroImg.src = g.src;
+                  heroImg.alt = g.title;
+                }
+                galleryRow.querySelectorAll('.gallery-thumb-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+              };
+              galleryRow.appendChild(btn);
+            });
+          }
+        }
+
+        // Primary Actions
+        const liveBtn = document.getElementById('modalLiveBtn');
+        if (liveBtn) liveBtn.href = project.liveUrl;
+        
+        const ghBtn = document.getElementById('modalGithubBtn');
+        if (ghBtn) ghBtn.href = project.githubUrl;
+
+        const statusLabel = document.getElementById('modalStatusLabel');
+        if (statusLabel) statusLabel.textContent = project.status || 'Verified Production Build';
+
+        // 1. Overview & Problem Statement
+        const overviewEl = document.getElementById('modalOverviewText');
+        if (overviewEl) overviewEl.textContent = project.overview;
+        
+        const problemEl = document.getElementById('modalProblemText');
+        if (problemEl) problemEl.textContent = project.problemStatement;
+
+        // 2. Key Features
+        const featContainer = document.getElementById('modalFeaturesList');
+        if (featContainer) {
+          featContainer.innerHTML = '';
+          project.keyFeatures.forEach(feat => {
+            const item = document.createElement('div');
+            item.className = 'feature-check-item';
+            item.innerHTML = `<div class="feature-check-icon"><i data-lucide="check-circle-2"></i></div><span>${feat}</span>`;
+            featContainer.appendChild(item);
+          });
+        }
+
+        // 3. Categorized Tech
+        const techContainer = document.getElementById('modalCategorizedTech');
+        if (techContainer) {
+          techContainer.innerHTML = '';
+          const catLabels = {
+            frontend: 'Frontend & UI',
+            backend: 'Backend Architecture',
+            database: 'Database & Storage',
+            tools: 'Tools & DevOps',
+            styling: 'Design System & Motion'
+          };
+          for (const [catKey, pills] of Object.entries(project.categorizedTech)) {
+            if (Array.isArray(pills) && pills.length > 0) {
+              const catBox = document.createElement('div');
+              catBox.className = 'tech-category-box';
+              catBox.innerHTML = `
+                <div class="tech-category-title">
+                  <i data-lucide="layers"></i>
+                  <span>${catLabels[catKey] || catKey.toUpperCase()}</span>
+                </div>
+                <div class="tech-pills-row">
+                  ${pills.map(p => `<span class="tech-sub-pill">${p}</span>`).join('')}
+                </div>
+              `;
+              techContainer.appendChild(catBox);
+            }
+          }
+        }
+
+        // Workflow Pipeline
+        const workflowList = document.getElementById('modalWorkflowList');
+        if (workflowList) {
+          workflowList.innerHTML = '';
+          if (project.workflow && project.workflow.length > 0) {
+            project.workflow.forEach(w => {
+              const stepItem = document.createElement('div');
+              stepItem.className = 'workflow-step-item';
+              stepItem.innerHTML = `<span class="workflow-step-badge">${w.step}</span><span>${w.desc}</span>`;
+              workflowList.appendChild(stepItem);
+            });
+          }
+        }
+
+        // 4. Challenges & Solutions
+        const challengesList = document.getElementById('modalChallengesList');
+        if (challengesList) {
+          challengesList.innerHTML = '';
+          if (project.challenges && project.challenges.length > 0) {
+            project.challenges.forEach(c => {
+              const cCard = document.createElement('div');
+              cCard.className = 'challenge-item-card';
+              cCard.innerHTML = `
+                <div class="challenge-header">
+                  <span class="challenge-label">CHALLENGE</span>
+                  <span>${c.challenge}</span>
+                </div>
+                <div class="solution-header">
+                  <span class="solution-label">SOLUTION</span>
+                  <span>${c.solution}</span>
+                </div>
+              `;
+              challengesList.appendChild(cCard);
+            });
+          }
+        }
+
+        // Footer counter
+        const counterEl = document.getElementById('modalFooterCounter');
+        if (counterEl) counterEl.textContent = `${project.id} / 04`;
+
+        // Stop Lenis to prevent page scrolling behind modal
+        if (typeof lenis !== 'undefined' && lenis) lenis.stop();
+        document.body.style.overflow = 'hidden';
+
+        // Show Modal
+        const modal = document.getElementById('projectModal');
+        if (modal) {
+          modal.style.display = 'flex';
+          const modalBody = document.getElementById('projectModalBody');
+          if (modalBody) modalBody.scrollTop = 0;
+          requestAnimationFrame(() => {
+            modal.classList.add('active');
+          });
+        }
+
+        // Initialize Lucide icons
+        if (window.lucide && typeof lucide.createIcons === 'function') {
+          lucide.createIcons();
+        }
+      }
+
+      function closeProjectModal(e) {
+        if (e && e.target && e.target.closest('.project-modal-dialog') && !e.target.closest('.project-modal-close') && !e.target.closest('.btn-modal-close-alt')) {
+          return;
+        }
+        const modal = document.getElementById('projectModal');
+        if (!modal) return;
+        modal.classList.remove('active');
+        setTimeout(() => {
+          modal.style.display = 'none';
+          document.body.style.overflow = '';
+          if (typeof lenis !== 'undefined' && lenis) lenis.start();
+        }, 250);
+      }
+
+      function navigateProject(direction) {
+        const currentIndex = projectsData.findIndex(p => p.id === currentModalProjectId);
+        if (currentIndex === -1) return;
+        const nextIndex = (currentIndex + direction + projectsData.length) % projectsData.length;
+        openProjectModal(projectsData[nextIndex].id);
+      }
+
+      // Dynamic Projects Renderer (Helper to re-render or add projects)
+      function renderProjects() {
+        const container = document.getElementById('projectsContainer');
+        if (!container) return;
+        container.innerHTML = '';
+        projectsData.forEach((project, index) => {
+          const card = document.createElement('div');
+          card.className = `project-card reveal reveal-delay-${(index % 4) + 1} visible`;
+          card.setAttribute('data-project-id', project.id);
+          card.innerHTML = `
+            <div class="project-img-wrapper" onclick="openProjectModal('${project.id}')" role="button" tabindex="0" aria-label="View ${project.title} case study" onkeydown="if(event.key==='Enter'||event.key===' ')openProjectModal('${project.id}')">
+              <img src="${project.image}" alt="${project.title} Preview" class="project-img" loading="lazy" />
+              <div class="project-caption">
+                <span class="project-label">${project.id}</span>
+              </div>
+              <div class="project-cat-tag">${project.category.split('&')[0]}</div>
+              <div class="project-img-overlay">
+                <span class="project-view-pill">
+                  <i data-lucide="eye"></i> View Case Study
+                </span>
+              </div>
+            </div>
+            <div class="project-card-content">
+              <div class="project-card-info">
+                <h3 class="project-name" onclick="openProjectModal('${project.id}')">${project.title}</h3>
+                <p class="project-desc">${project.tagline}</p>
+              </div>
+              <div class="project-tech-pills">
+                ${project.techStackPills.map(pill => `<span class="tech-pill">${pill}</span>`).join('')}
+              </div>
+              <div class="project-card-actions">
+                <button type="button" class="btn-project-details" onclick="openProjectModal('${project.id}')" aria-label="View details for ${project.title}">
+                  <i data-lucide="info"></i>
+                  <span>View Details</span>
+                </button>
+                <a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer" class="btn-project-live" aria-label="Open live project for ${project.title}">
+                  <span>Live Project</span>
+                  <i data-lucide="external-link"></i>
+                </a>
+              </div>
+            </div>
+          `;
+          container.appendChild(card);
+        });
+        if (window.lucide && typeof lucide.createIcons === 'function') {
+          lucide.createIcons();
+        }
+      }
+
       // ── Certificate Lightbox Modal Handlers ──
       function openCertModal(imgSrc, title, sub, pdfSrc) {
         if (lenis) lenis.stop();
@@ -3948,8 +4482,22 @@
         }
       }
 
+      // Unified ESC and Arrow Key Handlers for Modals
       document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape') closeCertModal();
+        const projModal = document.getElementById('projectModal');
+        const isProjModalOpen = projModal && projModal.classList.contains('active');
+
+        if (e.key === 'Escape') {
+          if (isProjModalOpen) {
+            closeProjectModal();
+          } else {
+            closeCertModal();
+          }
+        } else if (isProjModalOpen && (e.key === 'ArrowLeft' || e.key === 'Left')) {
+          navigateProject(-1);
+        } else if (isProjModalOpen && (e.key === 'ArrowRight' || e.key === 'Right')) {
+          navigateProject(1);
+        }
       });
 
       // ── Dual-Theme Controller ──
