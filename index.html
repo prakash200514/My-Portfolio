@@ -4569,6 +4569,153 @@
       updateActiveNav();
     </script>
 
+  <!-- ── DETAILED PROJECT CASE STUDY MODAL ── -->
+  <div id="projectModal" class="project-modal-backdrop" onclick="closeProjectModal(event)" role="dialog" aria-modal="true" aria-labelledby="modalProjectTitle" style="display:none;">
+    <div class="project-modal-dialog" data-lenis-prevent onclick="event.stopPropagation()">
+      <!-- Modal Header -->
+      <div class="project-modal-header">
+        <div class="project-modal-header-info">
+          <div class="modal-title-row">
+            <span class="modal-project-badge" id="modalProjectNum">01</span>
+            <h2 class="modal-project-title" id="modalProjectTitle">Project Title</h2>
+          </div>
+          <div class="modal-project-meta">
+            <span class="modal-meta-pill"><i data-lucide="briefcase"></i> <span id="modalProjectRole">Full Stack Developer</span></span>
+            <span class="modal-meta-dot">•</span>
+            <span class="modal-meta-pill category-pill"><i data-lucide="tag"></i> <span id="modalProjectCategory">Web Application</span></span>
+          </div>
+        </div>
+        <button class="project-modal-close" onclick="closeProjectModal()" aria-label="Close Case Study">&times;</button>
+      </div>
+
+      <!-- Modal Body (Scrollable) -->
+      <div class="project-modal-body" data-lenis-prevent id="projectModalBody">
+        <!-- Hero Preview -->
+        <div class="modal-hero-wrapper">
+          <div class="modal-hero-frame">
+            <img id="modalHeroImg" src="./assets/images/proimg/disease-prediction.png" alt="Project Preview Screenshot" class="modal-hero-img" />
+            <div class="modal-hero-overlay-tag">
+              <span id="modalHeroTag">Healthcare · Diagnostics</span>
+            </div>
+          </div>
+          <!-- Gallery thumbnails for UI / Diagrams -->
+          <div class="modal-gallery-row" id="modalGalleryRow"></div>
+        </div>
+
+        <!-- Primary Action Bar (Launch Live Project & View Source Code GitHub) -->
+        <div class="modal-primary-actions">
+          <div class="modal-actions-left">
+            <a id="modalLiveBtn" href="https://prakash200514.github.io/My-Portfolio/" target="_blank" rel="noopener noreferrer" class="btn-modal-action-primary">
+              <i data-lucide="external-link"></i>
+              <span>Launch Live Project ↗</span>
+            </a>
+            <a id="modalGithubBtn" href="https://github.com/prakash200514/" target="_blank" rel="noopener noreferrer" class="btn-modal-action-secondary">
+              <i data-lucide="github"></i>
+              <span>View Source Code (GitHub)</span>
+            </a>
+          </div>
+          <div class="modal-actions-status">
+            <span class="status-indicator-dot"></span>
+            <span id="modalStatusLabel">Verified Production Build</span>
+          </div>
+        </div>
+
+        <!-- Case Study Sections Container -->
+        <div class="modal-case-study-grid">
+          <!-- 1. Overview & Problem Statement -->
+          <div class="case-study-card">
+            <div class="case-study-card-header">
+              <div class="case-study-icon-box"><i data-lucide="compass"></i></div>
+              <div>
+                <h3 class="case-study-heading">1. Project Overview &amp; Problem Statement</h3>
+                <p class="case-study-subheading">Core purpose and clinical/business impact</p>
+              </div>
+            </div>
+            <div class="case-study-card-body">
+              <p id="modalOverviewText" class="case-study-text"></p>
+              <div class="problem-statement-callout">
+                <div class="callout-icon"><i data-lucide="alert-circle"></i></div>
+                <div>
+                  <h4 class="callout-title">The Problem We Solved</h4>
+                  <p id="modalProblemText" class="callout-desc"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Key Features -->
+          <div class="case-study-card">
+            <div class="case-study-card-header">
+              <div class="case-study-icon-box"><i data-lucide="check-circle-2"></i></div>
+              <div>
+                <h3 class="case-study-heading">2. Key Features &amp; Capabilities</h3>
+                <p class="case-study-subheading">Highlighted modules, user flows, and core functionality</p>
+              </div>
+            </div>
+            <div class="case-study-card-body">
+              <div id="modalFeaturesList" class="features-check-grid"></div>
+            </div>
+          </div>
+
+          <!-- 3. Tech Stack & Architecture -->
+          <div class="case-study-card">
+            <div class="case-study-card-header">
+              <div class="case-study-icon-box"><i data-lucide="cpu"></i></div>
+              <div>
+                <h3 class="case-study-heading">3. Tech Stack &amp; System Architecture</h3>
+                <p class="case-study-subheading">Categorized technical implementation &amp; system flow</p>
+              </div>
+            </div>
+            <div class="case-study-card-body">
+              <div class="categorized-tech-grid" id="modalCategorizedTech"></div>
+              
+              <!-- System Workflow Pipeline -->
+              <div class="workflow-pipeline-box">
+                <div class="workflow-pipeline-header">
+                  <i data-lucide="git-branch"></i>
+                  <span>System Workflow &amp; Execution Pipeline</span>
+                </div>
+                <div class="workflow-steps-list" id="modalWorkflowList"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Challenges & Solutions -->
+          <div class="case-study-card">
+            <div class="case-study-card-header">
+              <div class="case-study-icon-box"><i data-lucide="lightbulb"></i></div>
+              <div>
+                <h3 class="case-study-heading">4. Engineering Challenges &amp; Solutions</h3>
+                <p class="case-study-subheading">Architectural hurdles overcome during development</p>
+              </div>
+            </div>
+            <div class="case-study-card-body">
+              <div id="modalChallengesList" class="challenges-list-grid"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Footer (Sticky) -->
+      <div class="project-modal-footer">
+        <div class="modal-footer-nav">
+          <button type="button" class="btn-modal-nav" id="modalPrevBtn" onclick="navigateProject(-1)">
+            <i data-lucide="chevron-left"></i> Previous Project
+          </button>
+          <span class="modal-footer-counter" id="modalFooterCounter">01 / 04</span>
+          <button type="button" class="btn-modal-nav" id="modalNextBtn" onclick="navigateProject(1)">
+            Next Project <i data-lucide="chevron-right"></i>
+          </button>
+        </div>
+        <div class="modal-footer-actions">
+          <button type="button" class="btn-modal-close-alt" onclick="closeProjectModal()">
+            Close Case Study
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- ── CERTIFICATE LIGHTBOX MODAL ── -->
   <div id="certModal" class="cert-modal-backdrop" onclick="closeCertModal(event)" style="display:none; position:fixed; inset:0; z-index:9999; background:rgba(5,8,17,0.85); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); align-items:center; justify-content:center; padding:20px;">
     <div class="cert-modal-content" data-lenis-prevent onclick="event.stopPropagation()" style="position:relative; max-width:920px; width:100%; max-height:92vh; background:#0f172a; border:1px solid rgba(255,255,255,0.15); border-radius:18px; overflow:hidden; box-shadow:0 25px 60px -10px rgba(0,0,0,0.8); display:flex; flex-direction:column;">
